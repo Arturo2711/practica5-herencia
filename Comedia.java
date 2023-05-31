@@ -1,3 +1,5 @@
+import java.sql.Time;
+
 public class Comedia extends Pelicula {
     //Atributos
     private int numPersonajesPrincipales;
@@ -5,8 +7,8 @@ public class Comedia extends Pelicula {
     private double nivelFelicidad;
 
     //Constructor
-    public Comedia(String nombre, Time duracion, Time horario, String director, double precio, int numPersonajesPrincipales, int numChistes, double nivelFelicidad) {
-    super(nombre, duracion, horario, director, precio);
+    public Comedia(Time duracion, Time horario, String director, double precio, int numPersonajesPrincipales, int numChistes, double nivelFelicidad) {
+    super(duracion, horario, director, precio);
     this.numPersonajesPrincipales = numPersonajesPrincipales;
     this.numChistes = numChistes;
     this.nivelFelicidad = nivelFelicidad;
@@ -42,6 +44,6 @@ public class Comedia extends Pelicula {
 
     @Override
     public void venderEntrada(double precio) {
-        System.out.println("El precio de la entrada es: " + precio);
+        System.out.println("El precio de la entrada de pelicula comedia es: " + precio);
     }
 }

@@ -3,7 +3,6 @@ public class Cine{
     protected String nombre;
     private String ubicacicion;
 
-
     // Constructor
     Cine(String nombre, String ubicacicion){
         this.nombre = nombre;
